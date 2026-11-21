@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "svgforge": {
+      "command": "npx",
+      "args": ["-y", "svgforge-mcp"],
+      "env": {
+        "SVGForge_API_KEY": "sf_xxx",
+        "SVGForge_API_BASE": "https://svgforge.dev"
+      }
+    }
+  }
+}
