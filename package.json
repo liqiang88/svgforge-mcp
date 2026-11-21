@@ -1,0 +1,51 @@
+{
+  "name": "svgforge-mcp",
+  "version": "0.1.0",
+  "description": "SVGForge MCP server — search Iconify icons and fetch SVG/JSX for Cursor, Claude, and other MCP clients.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://svgforge.dev/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liqiang88/svgforge-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liqiang88/svgforge-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "svgforge",
+    "iconify",
+    "svg",
+    "icons",
+    "cursor",
+    "claude"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "svgforge-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p ./",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc -p ./ && node dist/index.js",
+    "smoke": "npm run build && node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
