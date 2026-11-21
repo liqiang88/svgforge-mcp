@@ -1,6 +1,6 @@
 {
   "name": "svgforge-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SVGForge MCP server — search Iconify icons and fetch SVG/JSX for Cursor, Claude, and other MCP clients.",
   "type": "module",
   "license": "MIT",

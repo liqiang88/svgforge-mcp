@@ -62,7 +62,7 @@ Local checkout:
   "mcpServers": {
     "svgforge": {
       "command": "node",
-      "args": ["D:/wwwroot/luo-project/svgforge-mcp/dist/index.js"],
+      "args": ["/www/wwwroot/luo-project/svgforge-mcp/dist/index.js"],
       "env": {
         "SVGForge_API_KEY": "sf_xxx",
         "SVGForge_API_BASE": "https://svgforge.dev"
@@ -115,9 +115,9 @@ Requests send `X-SVGForge-Client: mcp` for traffic attribution.
 
 ## Token
 
-1. Sign in at [svgforge.dev](https://svgforge.dev)  
-2. Open Dashboard → **API tokens**  
-3. Create a token (`sf_…`) — same token works for the VS Code extension  
+1. Sign in at [svgforge.dev](https://svgforge.dev)
+2. Open Dashboard → **API tokens**
+3. Create a token (`sf_…`) — same token works for the VS Code extension
 
 ## Privacy
 
